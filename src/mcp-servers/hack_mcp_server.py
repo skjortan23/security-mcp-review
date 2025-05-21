@@ -13,9 +13,9 @@ from mcp import StdioServerParameters
 # Allow nested event loops
 nest_asyncio.apply()
 
-agent_storage_file: str = "tmp/agents.db"
+agent_storage_file: str = "../tmp/agents.db"
 
-load_dotenv('../.env')
+load_dotenv('../../.env')
 
 github_token = getenv("GITHUB_TOKEN") 
 if not github_token:
